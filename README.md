@@ -294,3 +294,7 @@ Use find, wc -l, sort
 - Using getopts for argument parsing
 - Shellcheck for linting scripts
 
+## 🐉 For the Adventurous
+
+- Vim
+
