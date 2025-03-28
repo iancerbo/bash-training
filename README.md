@@ -318,10 +318,10 @@ Use find, wc -l, sort
 ```sh
 export AWS_PROFILE="us-workloads-prod"
 aws sso login
-kubectl config use-context arn:aws:eks:us-east-1:081513380233:cluster/eks-ue1-prod-mdhq
-kubectl get namespaces | grep parsleymedicalsf
-kubectl get pods --namespace="parsleymedicalsf"
-kubectl exec -it "parsleymedicalsf-mdhq-stack-84fc97ffdc-4hfx5" --namespace="parsleymedicalsf" -- /bin/bash
+kubectl config use-context [ue1-context-name]
+kubectl get namespaces | grep [namespace]
+kubectl get pods --namespace="[namespace]"
+kubectl exec -it "[pod-name]" --namespace="[namespace]" -- /bin/bash
 cd /tmp
 mkdir workshop-sandbox
 cd workshop-sandbox
