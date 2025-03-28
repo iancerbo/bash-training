@@ -181,7 +181,7 @@ ls nofile 2> error.log
 
 **Concepts:**
 
-- >, >>, <, 2>, |
+- `>`, >>, <, 2>, |
 
 Use redirection operators to control where input and output go:
 
