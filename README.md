@@ -204,13 +204,36 @@ cat file.txt | wc -l
 
 ## 🔹 Section 7: Exit Codes and Control Operators
 
-What You'll Learn:
+**What You'll Learn:**
+
 - How Bash signals success or failure
 
-Concepts:
+**Concepts:**
+
 - $?, &&, ||
 
-Exercise:
+Every command returns an exit code:
+
+- `0` means success
+- Any other value means failure
+
+Check the last exit code:
+
+```sh
+echo $?
+```
+
+Control operators:
+
+- `&&` – run next command only if previous succeeded
+- `||` – run next only if previous failed
+
+```sh
+mkdir test && cd test
+false || echo "Command failed"
+```
+
+**Exercise:**
 
 ```sh
 false
@@ -221,15 +244,34 @@ false || echo "Failed, but continuing"
 
 ## 🔹 Section 8: Variables and Quoting
 
-What You'll Learn:
+**What You'll Learn:**
+
 - Creating and using variables
 - Quoting rules
 
-Concepts:
+**Concepts:**
+
 - name=value, $name
 - "double quotes" vs 'single quotes'
 
-Exercise:
+Create variables with no spaces:
+
+```sh
+name="world"
+echo "Hello, $name!"
+```
+
+Quoting:
+
+- Double quotes (`"`) allow variable expansion
+- Single quotes (`'`) treat everything literally
+
+```sh
+echo "$name"    # expands
+echo '$name'    # literal
+```
+
+**Exercise:**
 
 ```sh
 name="world"
@@ -239,13 +281,30 @@ echo 'Hello, $name!'
 
 ## 🔹 Section 9: Command Substitution
 
-What You'll Learn:
+**What You'll Learn:**
+
 - Using output of one command in another
 
-Concepts:
-- $(command), legacy `command`
+**Concepts:**
 
-Exercise:
+- $(command), legacy ``command``
+
+Command substitution lets you assign output of a command to a variable:
+
+```sh
+now=$(date)
+echo "Current time is: $now"
+```
+
+The older syntax is:
+
+```sh
+now=`date`
+```
+
+But `$(...)` is preferred.
+
+**Exercise:**
 
 ```sh
 now=$(date)
@@ -254,13 +313,31 @@ echo "Current time is: $now"
 
 ## 🔹 Section 10: Common Core Utilities
 
-What You'll Learn:
+**What You'll Learn:**
+
 - The most-used command-line tools
 
-Commands:
+**Commands:**
+
 - cat, head, tail, grep, cut, sort, uniq, xargs, wc, find
 
-Exercise:
+Useful core utilities:
+
+- `cat`,`head`, `tail` – view file content
+- `grep` – search for text
+- `cut`, `awk`, `sed` – extract/transform text
+- `sort`, `uniq` – organize lines
+- `xargs` – build and execute commands
+- `find` – search for files
+
+**Examples:**
+
+```sh
+grep "ERROR" logfile.txt
+find . -name "*.log" | xargs rm
+```
+
+**Exercise:**
 
 ```sh
 echo -e "one\ntwo\nthree\none" > list.txt
@@ -346,7 +423,11 @@ Use find, wc -l, sort
 
 ## 🧠 In Context for Cerbo
 
-**Congratulations!** Paired with the docker and kubernetes training, you now know enough to be _dangerous_ in the AWS production environment. 😈
+**Congratulations!** 🎉
+
+Paired with the docker and kubernetes training, you now know enough to be _dangerous_ in the AWS production environment. 😈
+
+> With great power comes great responsibility. 🕸️
 
 ```sh
 export AWS_PROFILE="us-workloads-prod"
