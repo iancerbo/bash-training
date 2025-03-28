@@ -13,14 +13,15 @@
 ## 🔹 Section 1: Introduction to the Shell
 
 What You'll Learn:
-* What a shell is
-* Bash vs. other shells
-* Why developers use the terminal
+
+- What a shell is
+- Bash vs. other shells
+- Why developers use the terminal
 
 Key Concepts:
-* CLI vs GUI
-* Shells as command interpreters
-* Shell versions: sh, bash, zsh, etc.
+- CLI vs GUI
+- Shells as command interpreters
+- Shell versions: sh, bash, zsh, etc.
 
 Exercise:
 
@@ -32,12 +33,12 @@ which bash
 ## 🔹 Section 2: Running Commands
 
 What You'll Learn:
-* How to run and structure commands
-* Understanding command syntax
+- How to run and structure commands
+- Understanding command syntax
 
 Key Concepts:
-* Command, options, and arguments
-* man pages for help
+- Command, options, and arguments
+- man pages for help
 
 Exercise:
 
@@ -49,10 +50,10 @@ man ls
 ## 🔹 Section 3: File Navigation
 
 What You'll Learn:
-* How to move through the filesystem using the terminal
+- How to move through the filesystem using the terminal
 
 Key Commands:
-* pwd, cd, ls, tree
+- pwd, cd, ls, tree
 
 Exercise:
 
@@ -67,10 +68,10 @@ tree . -L 1
 ## 🔹 Section 4: Working with Files and Directories
 
 What You'll Learn:
-* Creating, moving, copying, and deleting files
+- Creating, moving, copying, and deleting files
 
 Key Commands:
-* touch, mkdir, cp, mv, rm, rmdir
+- touch, mkdir, cp, mv, rm, rmdir
 
 Exercise:
 
@@ -86,11 +87,11 @@ rm archive.txt
 ## 🔹 Section 5: stdin, stdout, stderr
 
 What You'll Learn:
-* How commands handle input and output
+- How commands handle input and output
 
 Concepts:
-* stdin, stdout, stderr
-* File descriptor numbers: 0, 1, 2
+- stdin, stdout, stderr
+- File descriptor numbers: 0, 1, 2
 
 Exercise:
 
@@ -103,10 +104,10 @@ ls nofile 2> error.log
 ## 🔹 Section 6: Redirects and Pipes
 
 What You'll Learn:
-* Redirection and chaining output between commands
+- Redirection and chaining output between commands
 
 Concepts:
-* >, >>, <, 2>, |
+- >, >>, <, 2>, |
 
 Exercise:
 
@@ -119,10 +120,10 @@ cat file.txt | wc -l
 ## 🔹 Section 7: Exit Codes and Control Operators
 
 What You'll Learn:
-* How Bash signals success or failure
+- How Bash signals success or failure
 
 Concepts:
-* $?, &&, ||
+- $?, &&, ||
 
 Exercise:
 
@@ -136,12 +137,12 @@ false || echo "Failed, but continuing"
 ## 🔹 Section 8: Variables and Quoting
 
 What You'll Learn:
-* Creating and using variables
-* Quoting rules
+- Creating and using variables
+- Quoting rules
 
 Concepts:
-* name=value, $name
-* "double quotes" vs 'single quotes'
+- name=value, $name
+- "double quotes" vs 'single quotes'
 
 Exercise:
 
@@ -154,10 +155,10 @@ echo 'Hello, $name!'
 ## 🔹 Section 9: Command Substitution
 
 What You'll Learn:
-* Using output of one command in another
+- Using output of one command in another
 
 Concepts:
-* $(command), legacy `command`
+- $(command), legacy `command`
 
 Exercise:
 
@@ -169,10 +170,10 @@ echo "Current time is: $now"
 ## 🔹 Section 10: Common Core Utilities
 
 What You'll Learn:
-* The most-used command-line tools
+- The most-used command-line tools
 
 Commands:
-* cat, head, tail, grep, cut, sort, uniq, xargs, wc, find
+- cat, head, tail, grep, cut, sort, uniq, xargs, wc, find
 
 Exercise:
 
@@ -185,10 +186,10 @@ find . -name "*.txt"
 ## 🔹 Section 11: Globs and Wildcards
 
 What You'll Learn:
-* Pattern matching in filenames
+- Pattern matching in filenames
 
 Concepts:
-* *, ?, [abc], {a,b}
+- *, ?, [abc], {a,b}
 
 Exercise:
 
@@ -201,11 +202,11 @@ ls ?.txt
 ## 🔹 Section 12: Conditionals
 
 What You'll Learn:
-* Using if, else, elif statements
+- Using if, else, elif statements
 
 Concepts:
-* test or [ ... ] syntax
-* -f, -d, -n, -z, etc.
+- test or [ ... ] syntax
+- -f, -d, -n, -z, etc.
 
 Exercise:
 
@@ -216,10 +217,10 @@ if [ -f list.txt ]; then echo "File exists"; else echo "No file"; fi
 ## 🔹 Section 13: Loops
 
 What You'll Learn:
-* Looping through files or command results
+- Looping through files or command results
 
 Concepts:
-* for, while, until
+- for, while, until
 
 Exercise:
 
@@ -230,11 +231,11 @@ for file in *.txt; do echo "Found: $file"; done
 ## 🔹 Section 14: Writing Bash Scripts
 
 What You'll Learn:
-* Putting it all together in .sh files
+- Putting it all together in .sh files
 
 Concepts:
-* Shebang (#!/bin/bash)
-* Making scripts executable
+- Shebang (#!/bin/bash)
+- Making scripts executable
 
 Exercise:
 
@@ -249,14 +250,17 @@ chmod +x script.sh
 Workshop Mini-Project:
 
 Write a script to:
+
 1.	Search a directory for .log files
 2.	Count the lines in each
 3.	Output the filename and line count, sorted by count
 
 🛠️ Hint:
+
 Use find, wc -l, sort
 
-📘 Bonus Topics (Optional)
+## 📘 Bonus Topics (Optional)
+
 * Functions in Bash
 * trap and signal handling
 * Using getopts for argument parsing
