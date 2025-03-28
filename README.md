@@ -116,6 +116,8 @@ ls -lh
 
 - touch, mkdir, cp, mv, rm, rmdir
 
+You can perform file operations using:
+
 - `touch file.txt` – creates an empty file
 - `mkdir new_dir` – makes a directory
 - `cp file.txt file2.txt` – copies a file
@@ -138,14 +140,30 @@ rm archive.txt
 
 ## 🔹 Section 5: stdin, stdout, stderr
 
-What You'll Learn:
+**What You'll Learn:**
+
 - How commands handle input and output
 
-Concepts:
+**Concepts:**
+
 - stdin, stdout, stderr
 - File descriptor numbers: 0, 1, 2
 
-Exercise:
+Bash uses three standard streams:
+
+- `stdin` (0) – standard input, usually from keyboard
+- `stdout` (1) – standard output, usually to terminal
+- `stderr` (2) – standard error output
+
+You can redirect these streams:
+
+```sh
+echo "Hello" > out.txt      # stdout to file
+ls nonexist 2> err.txt      # stderr to file
+cat < out.txt               # stdin from file
+```
+
+**Exercise:**
 
 ```sh
 echo "Hello" > hello.txt
@@ -155,13 +173,28 @@ ls nofile 2> error.log
 
 ## 🔹 Section 6: Redirects and Pipes
 
-What You'll Learn:
+**What You'll Learn:**
+
 - Redirection and chaining output between commands
 
-Concepts:
+**Concepts:**
+
 - >, >>, <, 2>, |
 
-Exercise:
+Use redirection operators to control where input and output go:
+
+- `>` – redirect stdout to file (overwrite)
+- `>>` – redirect stdout to file (append)
+- `<` – read stdin from file
+- `2>` – redirect stderr
+
+Use pipes (`|`) to pass stdout from one command to another:
+
+```sh
+cat file.txt | grep "error" | wc -l
+```
+
+**Exercise:**
 
 ```sh
 echo "line1" > file.txt
