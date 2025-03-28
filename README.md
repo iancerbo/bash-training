@@ -24,14 +24,14 @@ Key Concepts:
 
 Exercise:
 
+```sh
 echo $SHELL
 which bash
+```
 
+## 🔹 Section 2: Running Commands
 
-
-🔹 Section 2: Running Commands
-
-What You’ll Learn:
+What You'll Learn:
 * How to run and structure commands
 * Understanding command syntax
 
@@ -41,13 +41,14 @@ Key Concepts:
 
 Exercise:
 
+```sh
 ls -l /tmp
 man ls
+```
 
+## 🔹 Section 3: File Navigation
 
-🔹 Section 3: File Navigation
-
-What You’ll Learn:
+What You'll Learn:
 * How to move through the filesystem using the terminal
 
 Key Commands:
@@ -55,16 +56,17 @@ Key Commands:
 
 Exercise:
 
+```sh
 pwd
 cd /
 ls -lh
 cd ~
 tree . -L 1
+```
 
+## 🔹 Section 4: Working with Files and Directories
 
-🔹 Section 4: Working with Files and Directories
-
-What You’ll Learn:
+What You'll Learn:
 * Creating, moving, copying, and deleting files
 
 Key Commands:
@@ -72,17 +74,18 @@ Key Commands:
 
 Exercise:
 
+```sh
 mkdir workshop
 cd workshop
 touch file1.txt
 cp file1.txt file2.txt
 mv file2.txt archive.txt
 rm archive.txt
+```
 
+## 🔹 Section 5: stdin, stdout, stderr
 
-🔹 Section 5: stdin, stdout, stderr
-
-What You’ll Learn:
+What You'll Learn:
 * How commands handle input and output
 
 Concepts:
@@ -91,14 +94,15 @@ Concepts:
 
 Exercise:
 
+```sh
 echo "Hello" > hello.txt
 cat < hello.txt
 ls nofile 2> error.log
+```
 
+## 🔹 Section 6: Redirects and Pipes
 
-🔹 Section 6: Redirects and Pipes
-
-What You’ll Learn:
+What You'll Learn:
 * Redirection and chaining output between commands
 
 Concepts:
@@ -106,14 +110,15 @@ Concepts:
 
 Exercise:
 
+```sh
 echo "line1" > file.txt
 echo "line2" >> file.txt
 cat file.txt | wc -l
+```
 
+## 🔹 Section 7: Exit Codes and Control Operators
 
-🔹 Section 7: Exit Codes and Control Operators
-
-What You’ll Learn:
+What You'll Learn:
 * How Bash signals success or failure
 
 Concepts:
@@ -121,15 +126,16 @@ Concepts:
 
 Exercise:
 
+```sh
 false
 echo $?
 true && echo "Success"
 false || echo "Failed, but continuing"
+```
 
+## 🔹 Section 8: Variables and Quoting
 
-🔹 Section 8: Variables and Quoting
-
-What You’ll Learn:
+What You'll Learn:
 * Creating and using variables
 * Quoting rules
 
@@ -139,14 +145,15 @@ Concepts:
 
 Exercise:
 
+```sh
 name="world"
 echo "Hello, $name!"
 echo 'Hello, $name!'
+```
 
+## 🔹 Section 9: Command Substitution
 
-🔹 Section 9: Command Substitution
-
-What You’ll Learn:
+What You'll Learn:
 * Using output of one command in another
 
 Concepts:
@@ -154,13 +161,14 @@ Concepts:
 
 Exercise:
 
+```sh
 now=$(date)
 echo "Current time is: $now"
+```
 
+## 🔹 Section 10: Common Core Utilities
 
-🔹 Section 10: Common Core Utilities
-
-What You’ll Learn:
+What You'll Learn:
 * The most-used command-line tools
 
 Commands:
@@ -168,14 +176,15 @@ Commands:
 
 Exercise:
 
+```sh
 echo -e "one\ntwo\nthree\none" > list.txt
 cat list.txt | sort | uniq -c
 find . -name "*.txt"
+```
 
+## 🔹 Section 11: Globs and Wildcards
 
-🔹 Section 11: Globs and Wildcards
-
-What You’ll Learn:
+What You'll Learn:
 * Pattern matching in filenames
 
 Concepts:
@@ -183,14 +192,15 @@ Concepts:
 
 Exercise:
 
+```sh
 touch a.txt b.txt c.md
 ls *.txt
 ls ?.txt
+```
 
+## 🔹 Section 12: Conditionals
 
-🔹 Section 12: Conditionals
-
-What You’ll Learn:
+What You'll Learn:
 * Using if, else, elif statements
 
 Concepts:
@@ -199,12 +209,13 @@ Concepts:
 
 Exercise:
 
+```sh
 if [ -f list.txt ]; then echo "File exists"; else echo "No file"; fi
+```
 
+## 🔹 Section 13: Loops
 
-🔹 Section 13: Loops
-
-What You’ll Learn:
+What You'll Learn:
 * Looping through files or command results
 
 Concepts:
@@ -212,12 +223,13 @@ Concepts:
 
 Exercise:
 
+```sh
 for file in *.txt; do echo "Found: $file"; done
+```
 
+## 🔹 Section 14: Writing Bash Scripts
 
-🔹 Section 14: Writing Bash Scripts
-
-What You’ll Learn:
+What You'll Learn:
 * Putting it all together in .sh files
 
 Concepts:
@@ -226,12 +238,13 @@ Concepts:
 
 Exercise:
 
+```sh
 echo -e '#!/bin/bash\necho "This is a script."' > script.sh
 chmod +x script.sh
 ./script.sh
+```
 
-
-🔹 Section 15: Putting It All Together
+## 🔹 Section 15: Putting It All Together
 
 Workshop Mini-Project:
 
