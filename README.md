@@ -347,13 +347,32 @@ find . -name "*.txt"
 
 ## 🔹 Section 11: Globs and Wildcards
 
-What You'll Learn:
+**What You'll Learn:**
+
 - Pattern matching in filenames
 
-Concepts:
+**Concepts:**
+
 - *, ?, [abc], {a,b}
 
-Exercise:
+Use wildcards to match files:
+
+- `*` – matches any characters
+- `?` – matches a single character
+- `[abc]` – matches a, b, or c
+- `{a,b}` – matches a or b
+
+**Note:** Wildcards are _not_ regular expressions, although they do have some similarities in syntax.
+
+**Examples:**
+
+```sh
+ls *.txt
+ls file?.txt
+ls {a,b}.log
+```
+
+**Exercise:**
 
 ```sh
 touch a.txt b.txt c.md
@@ -363,14 +382,33 @@ ls ?.txt
 
 ## 🔹 Section 12: Conditionals
 
-What You'll Learn:
+**What You'll Learn:**
+
 - Using if, else, elif statements
 
-Concepts:
+**Concepts:**
+
 - test or [ ... ] syntax
 - -f, -d, -n, -z, etc.
 
-Exercise:
+Test conditions with `[` or `[[`:
+
+```sh
+if [ -f file.txt ]; then
+  echo "File exists"
+else
+  echo "No file"
+fi
+```
+
+Common test options:
+
+- `-f` – file exists
+- `-d` – directory exists
+- `-z` – string is empty
+- `-n` – string is not empty
+
+**Exercise:**
 
 ```sh
 if [ -f list.txt ]; then echo "File exists"; else echo "No file"; fi
@@ -378,13 +416,33 @@ if [ -f list.txt ]; then echo "File exists"; else echo "No file"; fi
 
 ## 🔹 Section 13: Loops
 
-What You'll Learn:
+**What You'll Learn:**
+
 - Looping through files or command results
 
-Concepts:
+**Concepts:**
+
 - for, while, until
 
-Exercise:
+`for` loop example:
+
+```sh
+for file in *.txt; do
+  echo "Found: $file"
+done
+```
+
+while loop example:
+
+```sh
+count=0
+while [ $count -lt 5 ]; do
+  echo $count
+  count=$((count + 1))
+done
+```
+
+**Exercise:**
 
 ```sh
 for file in *.txt; do echo "Found: $file"; done
@@ -392,14 +450,32 @@ for file in *.txt; do echo "Found: $file"; done
 
 ## 🔹 Section 14: Writing Bash Scripts
 
-What You'll Learn:
-- Putting it all together in .sh files
+**What You'll Learn:**
 
-Concepts:
+- Putting it all together in `.sh` files
+
+**Concepts:**
+
 - Shebang (#!/bin/bash)
 - Making scripts executable
 
-Exercise:
+Scripts start with a shebang:
+
+```sh
+#!/bin/bash
+```
+
+Save commands in a file:
+
+```sh
+echo -e '#!/bin/bash\necho "This is a script."' > myscript.sh
+chmod +x myscript.sh
+./myscript.sh
+```
+
+Use `$1`, `$2`, etc. for script arguments.
+
+**Exercise:**
 
 ```sh
 echo -e '#!/bin/bash\necho "This is a script."' > script.sh
@@ -420,6 +496,21 @@ Write a script to:
 🛠️ Hint:
 
 Use find, wc -l, sort
+
+<details>
+  <summary>Sample solution</summary>
+
+  <pre>
+  ```bash
+  find . -name "*.log" | while read file; do
+    count=$(wc -l < "$file")
+    echo "$count $file"
+  done | sort -n
+  ```
+  </pre>
+
+</details>
+
 
 ## 🧠 In Context for Cerbo
 
