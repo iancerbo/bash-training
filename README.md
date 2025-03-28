@@ -76,31 +76,56 @@ man ls
 
 ## 🔹 Section 3: File Navigation
 
-What You'll Learn:
+**What You'll Learn:**
+
 - How to move through the filesystem using the terminal
 
-Key Commands:
+**Key Commands:**
+
 - pwd, cd, ls, tree
 
-Exercise:
+You can navigate your file system using:
+
+- `pwd` – prints the current directory
+- `cd` – changes directory
+- `ls` – lists files and directories
+
+**Examples:**
+
+```sh
+pwd
+cd /etc
+ls -l
+```
+
+**Exercise:**
 
 ```sh
 pwd
 cd /
 ls -lh
-cd ~
-tree . -L 1
 ```
 
 ## 🔹 Section 4: Working with Files and Directories
 
-What You'll Learn:
+**What You'll Learn:**
+
 - Creating, moving, copying, and deleting files
 
-Key Commands:
+**Key Commands:**
+
 - touch, mkdir, cp, mv, rm, rmdir
 
-Exercise:
+- `touch file.txt` – creates an empty file
+- `mkdir new_dir` – makes a directory
+- `cp file.txt file2.txt` – copies a file
+- `mv file2.txt archive.txt` – renames or moves a file
+- `rm file.txt` – deletes a file
+- `rmdir dir_name` – deletes an empty directory
+
+Be careful with `rm` – it deletes permanently.
+
+**Exercise:**
 
 ```sh
 mkdir workshop
