@@ -2,13 +2,13 @@
 
 ## 🎯 Course Overview
 
-**Audience:** Developers new to the shell
+🎙️ **Audience:** Developers new to the shell
 
-**Goal:** Understand core shell concepts, confidently use Bash to automate and manipulate files and processes
+🎯 **Goal:** Understand core shell concepts, confidently use Bash to automate and manipulate files and processes
 
-**Format:** 15 sections, each with interactive exercises
+📝 **Format:** 15 sections, each with interactive exercises
 
-**Estimated Duration:** 4–6 hours total
+⏰ **Estimated Duration:** 4–6 hours total
 
 ## 🔹 Section 1: Introduction to the Shell
 
@@ -530,7 +530,8 @@ cd workshop-sandbox
 
 ## 📘 Bonus Topics
 
-- Readline
+- Using readline for cursor navigation
+- Using environment variables
 - Functions in Bash
 - trap and signal handling
 - Using getopts for argument parsing
@@ -538,5 +539,5 @@ cd workshop-sandbox
 
 ## 🐉 For the Adventurous
 
-- Vim
+- Using vim for editing text files
 
