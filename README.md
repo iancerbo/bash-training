@@ -539,6 +539,7 @@ kubectl exec -it "<pod-name>" --namespace="<namespace>" -- /bin/bash
 - Using getopts for argument parsing
 - Shellcheck for linting scripts
 - Managing processes and background jobs
+- Using `~` and `-` directory shorthands
 
 ## 🐉 For the Adventurous
 
