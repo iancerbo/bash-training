@@ -499,16 +499,12 @@ Use find, wc -l, sort
 
 <details>
   <summary>Sample solution</summary>
-
   <pre>
-  ```bash
   find . -name "*.log" | while read file; do
     count=$(wc -l < "$file")
     echo "$count $file"
   done | sort -n
-  ```
   </pre>
-
 </details>
 
 
