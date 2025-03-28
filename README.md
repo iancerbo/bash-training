@@ -1,13 +1,16 @@
 # 🐚 Bash for Developers: A Comprehensive Course
 
-🎯 Course Overview
+## 🎯 Course Overview
 
-Audience: Developers new to the shell
-Goal: Understand core shell concepts, confidently use Bash to automate and manipulate files and processes
-Format: 15 sections, each with interactive exercises
-Estimated Duration: 4–6 hours total, split into shorter sessions
+**Audience:** Developers new to the shell
 
-🔹 Section 1: Introduction to the Shell
+**Goal:** Understand core shell concepts, confidently use Bash to automate and manipulate files and processes
+
+**Format:** 15 sections, each with interactive exercises
+
+**Estimated Duration:** 4–6 hours total
+
+## 🔹 Section 1: Introduction to the Shell
 
 What You’ll Learn:
 	•	What a shell is
