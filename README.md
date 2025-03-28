@@ -521,13 +521,11 @@ Paired with the docker and kubernetes training, you now know enough to be _dange
 ```sh
 export AWS_PROFILE="us-workloads-prod"
 aws sso login
-kubectl config use-context [ue1-context-name]
-kubectl get namespaces | grep [namespace]
-kubectl get pods --namespace="[namespace]"
-kubectl exec -it "[pod-name]" --namespace="[namespace]" -- /bin/bash
-cd /tmp
-mkdir workshop-sandbox
-cd workshop-sandbox
+kubectl config use-context <context-arn>
+kubectl get namespaces | grep <namespace>
+kubectl get pods --namespace="<namespace>"
+kubectl exec -it "<pod-name>" --namespace="<namespace>" -- /bin/bash
+# Unleash your new-found powers ✨
 ```
 
 ## 📘 Bonus Topics
