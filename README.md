@@ -286,7 +286,7 @@ Write a script to:
 
 Use find, wc -l, sort
 
-## 📘 Bonus Topics (Optional)
+## 📘 Bonus Topics
 
 - Readline
 - Functions in Bash
