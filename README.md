@@ -1,6 +1,6 @@
 # 🐚 Bash for Developers: A Comprehensive Course
 
-## 🎯 Course Overview
+## ℹ️ Course Overview
 
 🎙️ **Audience:** Developers new to the shell
 
