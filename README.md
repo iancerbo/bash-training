@@ -10,6 +10,8 @@
 
 ⏰ **Estimated Duration:** 4–6 hours total
 
+🌎 **Environment:** Use the terminal on Linux and macOS, or WSL on Windows
+
 ## 🔹 Section 1: Introduction to the Shell
 
 **What You'll Learn:**
@@ -536,6 +538,7 @@ cd workshop-sandbox
 - trap and signal handling
 - Using getopts for argument parsing
 - Shellcheck for linting scripts
+- Managing processes and background jobs
 
 ## 🐉 For the Adventurous
 
