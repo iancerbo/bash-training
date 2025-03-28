@@ -289,7 +289,7 @@ echo 'Hello, $name!'
 
 **Concepts:**
 
-- $(command), legacy ``command``
+- $(command), legacy \`command\`
 
 Command substitution lets you assign output of a command to a variable:
 
