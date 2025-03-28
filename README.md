@@ -69,6 +69,8 @@ Use the `man` command to read the manual for any command:
 man ls
 ```
 
+Type `q` to quit the manual.
+
 **Exercise:**
 
 ```sh
