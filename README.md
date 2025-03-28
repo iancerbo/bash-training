@@ -311,6 +311,22 @@ Write a script to:
 
 Use find, wc -l, sort
 
+## 🧠 In Context for Cerbo
+
+**Congratulations!** Paired with the docker and kubernetes training, you now know enough to be _dangerous_ in the AWS production environment. 😈
+
+```sh
+export AWS_PROFILE="us-workloads-prod"
+aws sso login
+kubectl config use-context arn:aws:eks:us-east-1:081513380233:cluster/eks-ue1-prod-mdhq
+kubectl get namespaces | grep parsleymedicalsf
+kubectl get pods --namespace="parsleymedicalsf"
+kubectl exec -it "parsleymedicalsf-mdhq-stack-84fc97ffdc-4hfx5" --namespace="parsleymedicalsf" -- /bin/bash
+cd /tmp
+mkdir workshop-sandbox
+cd workshop-sandbox
+```
+
 ## 📘 Bonus Topics
 
 - Readline
