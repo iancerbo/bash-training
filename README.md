@@ -37,15 +37,37 @@ which bash
 
 ## 🔹 Section 2: Running Commands
 
-What You'll Learn:
+**What You'll Learn:**
+
 - How to run and structure commands
 - Understanding command syntax
 
-Key Concepts:
+**Key Concepts:**
+
 - Command, options, and arguments
 - man pages for help
 
-Exercise:
+Shell commands usually follow this structure:
+
+```sh
+command [options] [arguments]
+```
+
+For example:
+
+```sh
+ls -l /tmp
+```
+
+Here, `ls` is the command, `-l` is an option to show a detailed list, and `/tmp` is the argument (the target directory).
+
+Use the `man` command to read the manual for any command:
+
+```sh
+man ls
+```
+
+**Exercise:**
 
 ```sh
 ls -l /tmp
@@ -266,8 +288,9 @@ Use find, wc -l, sort
 
 ## 📘 Bonus Topics (Optional)
 
-* Functions in Bash
-* trap and signal handling
-* Using getopts for argument parsing
-* Shellcheck for linting scripts
+- Readline
+- Functions in Bash
+- trap and signal handling
+- Using getopts for argument parsing
+- Shellcheck for linting scripts
 
