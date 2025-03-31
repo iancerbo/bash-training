@@ -469,6 +469,12 @@ Scripts start with a shebang:
 #!/bin/bash
 ```
 
+The preferred way to do this predictably is by using the `env` command:
+
+```sh
+#!/usr/bin/env bash
+```
+
 Save commands in a file:
 
 ```sh
