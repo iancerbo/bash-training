@@ -540,6 +540,7 @@ kubectl exec -it "<pod-name>" --namespace="<namespace>" -- /bin/bash
 - Shellcheck for linting scripts
 - Managing processes and background jobs
 - Using `~` and `-` directory shorthands
+- Using `$@` and `case`
 
 ## 🐉 For the Adventurous
 
