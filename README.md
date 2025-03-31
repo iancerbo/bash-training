@@ -547,6 +547,7 @@ kubectl exec -it "<pod-name>" --namespace="<namespace>" -- /bin/bash
 - Managing processes and background jobs
 - Using `~` and `-` directory shorthands
 - Using `$@` and `case`
+- Using `--` to pass arguments to subsequent inline commands
 
 ## 🐉 For the Adventurous
 
