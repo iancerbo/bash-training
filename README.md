@@ -1,4 +1,4 @@
-# 🐚 Bash for Developers: A Comprehensive Course
+# 🐚 Bash for Developers: A Comprehensive Primer
 
 ## ℹ️ Course Overview
 
