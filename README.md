@@ -538,6 +538,7 @@ kubectl exec -it "<pod-name>" --namespace="<namespace>" -- /bin/bash
 
 ## 📘 Bonus Topics
 
+- Using tab completion
 - Using readline for cursor navigation
 - Using environment variables
 - Functions in Bash
